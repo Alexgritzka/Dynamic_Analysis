@@ -1,0 +1,38 @@
+import "hash"
+
+
+rule wannaCry {
+
+    strings:
+
+        $password = "WNcry@2ol7"
+
+        $zip1 = "r.wnry"
+
+        $zip2 = "s.wnry"
+
+        $zip3 = "t.wnry"
+
+        $zip4 = "u.wnry"
+
+        $zip5 = "b.wnry"
+
+        $zip6 = "c.wnry"
+
+        $zip7 = "tasksche.exe"
+
+        $zip8 = "taskse.exe"
+
+        $zip9 = "taskdl.exe"
+
+ 
+
+    condition:
+
+        $password or
+
+        6 of ($zip*) or
+
+        hash.md5(0, filesize) == "84c82835a5d21bbcf75a61706d8ab549"
+
+}
