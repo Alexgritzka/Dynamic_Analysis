@@ -56,7 +56,7 @@ ZIP entpacken
 
 Jetzt versuchen wir, diese ZIP komprimierten Daten zu entpacken.
 
-$ unzip Application\ \&\ CV.exe
+$ sudo unzip Application\ \&\ CV.exe
 
 Dies führt zu einer Eingabeaufforderung, die nach einem Passwort für die ZIP Datei fragt. Leider kennen wir es nicht.
 
@@ -76,7 +76,7 @@ Correct Password is WNcry@2ol7
 
 Unser Skript findet das Passwort WNcry@2ol7. Mit diesem können wir die ZIP-Datei nun entpacken:
 
-$ unzip -P WNcry@2ol7 Application\ \&\ CV.exe
+$ sudo unzip -P WNcry@2ol7 Application\ \&\ CV.exe
 
 Sollte es beim Entpacken Probleme geben, liegt eine bereits entpackte Variante im Ordner ~/backup
 
@@ -282,6 +282,7 @@ Dies ist bspw. eine mögliche Regel. Es gibt zwei Blöcke innerhalb der Regel: I
 ++++++++++++++++++++++++++++++
 Yara Regel nutzen
 ++++++++++++++++++++++++++++++
+
 Die Yara Regel ist als rule.txt im persönlichen Ordner hinterlegt, in der Kommandozeile muss auf den Desktop gewechselt werden
 
 cd Desktop
