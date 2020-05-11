@@ -289,6 +289,6 @@ cd Desktop
 
 yara64.exe -r .\WCry\rule.txt .
 
-Mit diesem Kommando wird yara mit der von uns definierten Regel gestartet, und durchsucht rekursiv unseren Desktop. Dabei wird jede Datei analysiert. Das Ergebnis ist, dass die Regel wannaCry auf der Datei \Dynamic Analysis\Application & CV.pdf.exe angeschlagen hat.
+Mit diesem Kommando wird yara mit der von uns definierten Regel gestartet, und durchsucht rekursiv unseren Desktop. Dabei wird jede Datei analysiert. Das Ergebnis ist, dass die Regel wannaCry auf der Datei \Dynamic Analysis\Application & CV.pdf.exe und auf andere Dateien im WCry, die die gesuchten Strings beinhalten, angeschlagen hat.
 
 Das ist keine Überraschung, allerdings besteht die Stärke darin, dass nun Dateien auf allen Computern im System auf diese Regel gescannt werden können, unabhängig vom Betriebssystem.	
