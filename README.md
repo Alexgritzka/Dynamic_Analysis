@@ -97,10 +97,15 @@ $ sudo file *.wnry
 Die Anmerkungen dazu kann man teilweise leicht erschließen, teilweise sind sie aus einem Factsheet übernommen.
 
 b.wnry Bitmap   Hintergrundbild mit Anleitung
+
 c.wnry Text     URLs zu TOR HiddenServices
+
 r.wnry Text     WannaCry FAQ
+
 S.wnry ZIP-File ZIP-Archiv mit TOR-Installation
+
 t.wnry Binary   Verschlüsselte DLL für Verschlüsselungsfunktionen
+
 u.wnry PE	Decryptor Tool
 
 ++++++++++++++++++++++++++++++
@@ -184,6 +189,7 @@ Autostart
 Nach einem Klick in in der oberen Leiste auf das Dateisymbol werden die Dateioperationen ausgeblendet, nun ist die Liste wesentlich kürzer.
 
 So kann man nachvollziehen, dass durch einen Registry Eintrag die Malware in den Autostart eingefügt wurde.
+"RegSetValue - HKLM\SOFTWARE\Wow6432Node\WanaCrypt0r\wd"
 	
 ++++++++++++++++++++++++++++++
 Auswertung
@@ -196,6 +202,8 @@ HKU\S-1-5-21-3463664321-2923530833-3546627382-1000\Software\Microsoft\Windows\Cu
 
 HKU\S-1-5-21-3463664321-2923530833-3546627382-1000\Software\WanaCrypt0r\wd: "C:\Users\IEUser\Desktop"
 
+
+reg.exe: RegSetValue - HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run\hbdzmwskmerogm715 
 
 ------------------------------
 IOC Analyse (Windows VM)
